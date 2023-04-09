@@ -85,3 +85,22 @@ lint/tmp/
 # lint/reports/
 
 .DS_Store
+./EitherOr/.idea
+./.idea
+EitherOr/.idea
+
+*.iml
+EitherOr/.gradle
+EitherOr/local.properties
+EitherOr/.idea/caches
+EitherOr/.idea/libraries
+EitherOr/.idea/modules.xml
+EitherOr/.idea/workspace.xml
+EitherOr/.idea/navEditor.xml
+EitherOr/.idea/assetWizardSettings.xml
+EitherOr/.DS_Store
+EitherOr/build
+EitherOr/captures
+EitherOr.externalNativeBuild
+EitherOr/.cxx
+EitherOr/local.properties
