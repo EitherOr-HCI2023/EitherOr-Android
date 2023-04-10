@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/selector_bnv_home"
+        android:title="@string/title_home" />
+
+<!--    <item-->
+<!--        android:id="@+id/add_quiz"-->
+<!--        android:icon="@drawable/selector_bnv_add_quiz"-->
+<!--        android:title="@string/title_add_quiz"-->
+<!--        app:showAsAction="always"-->
+<!--        />-->
+
+    <item
+        android:id="@+id/action_empty"
+        android:title=""
+        android:checkable="false"
+        android:enabled="false"/>
+
+    <item
+        android:id="@+id/like"
+        android:icon="@drawable/selector_bnv_like"
+        android:title="@string/title_like" />
+
+
+</menu>
