@@ -9,5 +9,13 @@
     <color name="white">#FFFFFFFF</color>
     <color name="transparent">#00FF0000</color>
     <color name="background_gray">#f8f8f8</color>
-
+    <color name="orange">#ee7d42</color>
+    <color name="blue">#3370e3</color>
+    <color name="green">#69cd84</color>
+    <color name="yellow">#f2c448</color>
+    <color name="aquamarine">#A0CEDE</color>
+    <color name="scuba_blue">#00B9CE</color>
+    <color name="lucite_green">#83CDBE</color>
+    <color name="classic_blue">#0064A2</color>
+    <color name="fab_blue">#7BB6D4</color>
 </resources>

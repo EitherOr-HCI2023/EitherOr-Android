@@ -47,6 +47,7 @@
             android:elevation="3dp"
             android:src="@drawable/ic_add"
             android:translationZ="2dp"
+            android:backgroundTint="@color/fab_blue"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
