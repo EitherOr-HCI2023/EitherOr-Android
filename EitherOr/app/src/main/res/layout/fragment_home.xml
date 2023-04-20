@@ -21,6 +21,13 @@
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
         />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/view_gray"
+        app:layout_constraintTop_toBottomOf="@id/f_home_top_text_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="15dp"/>
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/f_home_random_cv"
