@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/f_category_fun_btn"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/category_fun"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        app:backgroundTint="@color/scuba_blue"
+        app:cornerRadius="30dp"
+        app:layout_constraintEnd_toStartOf="@id/f_category_fun_daily"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/f_category_fun_daily"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:text="@string/category_daily"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        app:backgroundTint="@color/aquamarine"
+        app:cornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/f_category_fun_btn"
+        app:layout_constraintTop_toTopOf="@id/f_category_fun_btn" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/f_category_love"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/category_love"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        app:cornerRadius="30dp"
+        app:layout_constraintStart_toStartOf="@id/f_category_fun_btn"
+        app:layout_constraintTop_toBottomOf="@id/f_category_fun_btn" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/f_category_food"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/classic_blue"
+        android:text="@string/category_food"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        app:cornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/f_category_love"
+        app:layout_constraintTop_toTopOf="@id/f_category_love" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/f_category_taste"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/category_taste"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        app:cornerRadius="30dp"
+        app:layout_constraintStart_toStartOf="@id/f_category_love"
+        app:layout_constraintTop_toBottomOf="@id/f_category_love" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/f_category_if"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:text="@string/category_if"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        app:cornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/f_category_taste"
+        app:layout_constraintTop_toTopOf="@id/f_category_taste" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/f_category_job"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/category_job"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        app:cornerRadius="30dp"
+        app:layout_constraintStart_toStartOf="@id/f_category_taste"
+        app:layout_constraintTop_toBottomOf="@id/f_category_taste" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/f_category_caution"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:text="@string/category_caution"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        app:cornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/f_category_job"
+        app:layout_constraintTop_toTopOf="@id/f_category_job" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/f_category_life"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/category_life"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        app:cornerRadius="30dp"
+        app:layout_constraintStart_toStartOf="@id/f_category_job"
+        app:layout_constraintTop_toBottomOf="@id/f_category_job" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
