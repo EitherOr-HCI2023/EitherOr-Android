@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.addquiz.AddQuizActivity">
+    tools:context=".ui.quiz.QuizActivity">
 
     <TextView
-        android:id="@+id/add_quiz_title_tv"
+        android:id="@+id/a_quiz_title_tv"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="@color/scuba_blue"
@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/add_quiz_back_btn_iv"
+        android:id="@+id/a_quiz_back_btn_iv"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="20dp"
@@ -32,7 +32,7 @@
 
 
     <View
-        android:id="@+id/add_quiz_view"
+        android:id="@+id/a_quiz_view"
         android:layout_width="1000dp"
         android:layout_height="5dp"
         android:background="@color/view_gray"
@@ -40,10 +40,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/add_quiz_title_tv" />
+        app:layout_constraintTop_toBottomOf="@id/a_quiz_title_tv" />
 
     <TextView
-        android:id="@+id/add_quiz_choice1_tv"
+        android:id="@+id/a_quiz_choice1_tv"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="10dp"
@@ -53,13 +53,13 @@
         android:maxLength="100"
         android:text="@string/quiz_choice_dummy_text"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@id/add_quiz_view"
+        app:layout_constraintBottom_toTopOf="@id/a_quiz_view"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@id/add_quiz_logo_tv"
-        app:layout_constraintTop_toBottomOf="@id/add_quiz_logo_tv" />
+        app:layout_constraintStart_toStartOf="@id/a_quiz_logo_tv"
+        app:layout_constraintTop_toBottomOf="@id/a_quiz_logo_tv" />
 
     <TextView
-        android:id="@+id/add_quiz_choice2_tv"
+        android:id="@+id/a_quiz_choice2_tv"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginEnd="10dp"
@@ -69,31 +69,30 @@
         android:maxLength="100"
         android:text="@string/quiz_choice_dummy_text"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@id/add_quiz_chat_gpt_response_btn"
-        app:layout_constraintEnd_toEndOf="@id/add_quiz_logo_tv"
+        app:layout_constraintBottom_toTopOf="@id/a_quiz_chat_gpt_response_btn"
+        app:layout_constraintEnd_toEndOf="@id/a_quiz_logo_tv"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/add_quiz_view" />
+        app:layout_constraintTop_toBottomOf="@id/a_quiz_view" />
 
     <TextView
-        android:id="@+id/add_quiz_logo_tv"
+        android:id="@+id/a_quiz_logo_tv"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@drawable/quiz_oval_text"
         android:gravity="center"
         android:text="@string/quiz_either_or"
         android:textColor="@color/blue"
-        app:layout_constraintBottom_toBottomOf="@id/add_quiz_title_tv"
+        app:layout_constraintBottom_toBottomOf="@id/a_quiz_title_tv"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/add_quiz_title_tv" />
+        app:layout_constraintTop_toBottomOf="@id/a_quiz_title_tv" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/add_quiz_chat_gpt_response_btn"
+        android:id="@+id/a_quiz_chat_gpt_response_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:backgroundTint="@color/aquamarine"
         android:text="@string/quiz_chatgpt"
         app:layout_constraintBottom_toBottomOf="parent"/>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

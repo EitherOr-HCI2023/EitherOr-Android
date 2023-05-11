@@ -19,4 +19,8 @@
     <color name="lucite_green">#83CDBE</color>
     <color name="classic_blue">#0064A2</color>
     <color name="fab_blue">#7BB6D4</color>
+    <color name="game_blue">#d5f1f1</color>
+    <color name="game_gray">#e8e8e8</color>
+    <color name="game_pink">#f6d6e1</color>
+
 </resources>
