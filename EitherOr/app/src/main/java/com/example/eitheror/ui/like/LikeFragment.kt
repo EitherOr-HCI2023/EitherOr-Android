@@ -28,7 +28,6 @@ class LikeFragment : BaseFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        initDummyData()
 
         likeAdapter = LikeAdapter(likeQuizList)
         binding.fLikeListRv.adapter = likeAdapter
@@ -47,22 +46,6 @@ class LikeFragment : BaseFragment() {
         _binding = null
     }
 
-    private fun initDummyData() {
-        likeQuizList = arrayListOf(
-            Quiz(
-                1,
-                null,
-                100,
-                "asdf",
-                "Quiz 1",
-                "choice1",
-                1,
-                "choice2",
-                2,
-                "chatGPTComment",
-                1
-            )
-        )
-    }
+
 
 }

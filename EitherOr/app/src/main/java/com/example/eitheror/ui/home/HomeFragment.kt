@@ -10,6 +10,7 @@ import com.example.eitheror.R
 import com.example.eitheror.api.response.Quiz
 import com.example.eitheror.databinding.FragmentHomeBinding
 import com.example.eitheror.ui.category.CategoryFragment
+import com.example.eitheror.ui.quiz.QuizActivity
 import com.example.eitheror.ui.quizlist.QuizListFragment
 
 class HomeFragment : Fragment() {
@@ -38,15 +39,38 @@ class HomeFragment : Fragment() {
 
     private fun initClickListener(){
         binding.fHomeCategoryCv.setOnClickListener {
-            parentFragmentManager.beginTransaction().replace(R.id.main_frm, CategoryFragment())
-                .commitAllowingStateLoss()
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.main_frm, CategoryFragment())
+                .addToBackStack(null)
+                .commit()
         }
 
         binding.fHomeRecentCv.setOnClickListener{
             val quizListFragment = QuizListFragment()
             val quizBundle = Bundle()
-            val infoJson =
-            parentFragmentManager.beginTransaction().replace(R.id.main_frm, QuizListFragment())
+            quizBundle.putString("tag", "recent")
+            quizListFragment.arguments = quizBundle
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.main_frm, quizListFragment)
+                .addToBackStack(null)
+                .commit()
+        }
+
+        binding.fHomeRandomBtn.setOnClickListener {
+            val intent = Intent(requireContext(), QuizActivity::class.java)
+            intent.putExtra("quizType", "RANDOM")
+            startActivity(intent)
+        }
+
+        binding.fHomePopularCv.setOnClickListener {
+            val quizListFragment = QuizListFragment()
+            val quizBundle = Bundle()
+            quizBundle.putString("tag", "popular")
+            quizListFragment.arguments = quizBundle
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.main_frm, quizListFragment)
+                .addToBackStack(null)
+                .commit()
         }
 
     }

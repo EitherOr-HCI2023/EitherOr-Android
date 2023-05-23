@@ -22,5 +22,15 @@
     <color name="game_blue">#d5f1f1</color>
     <color name="game_gray">#e8e8e8</color>
     <color name="game_pink">#f6d6e1</color>
+    <color name="category_fun">#d55049</color>
+    <color name="category_daily">#813dd8</color>
+    <color name="category_love">#162f6b</color>
+    <color name="category_food">#d43d79</color>
+    <color name="category_taste">#2b4bc3</color>
+    <color name="category_if">#3f8128</color>
+    <color name="category_job">#cc6c2f</color>
+    <color name="category_caution">#c3389c</color>
+    <color name="category_life">#af74da</color>
+
 
 </resources>

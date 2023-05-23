@@ -5,29 +5,29 @@
     android:layout_height="match_parent">
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/f_category_fun_btn"
+        android:id="@+id/f_category_fun"
         android:layout_width="150dp"
         android:layout_height="100dp"
         android:layout_marginTop="20dp"
         android:text="@string/category_fun"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
-        app:backgroundTint="@color/scuba_blue"
+        app:backgroundTint="@color/category_fun"
         app:cornerRadius="30dp"
-        app:layout_constraintEnd_toStartOf="@id/f_category_fun_daily"
+        app:layout_constraintEnd_toStartOf="@id/f_category_daily"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/f_category_fun_daily"
+        android:id="@+id/f_category_daily"
         android:layout_width="150dp"
         android:layout_height="100dp"
         android:text="@string/category_daily"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
-        app:backgroundTint="@color/aquamarine"
+        app:backgroundTint="@color/category_daily"
         app:cornerRadius="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/f_category_fun_btn"
-        app:layout_constraintTop_toTopOf="@id/f_category_fun_btn" />
+        app:layout_constraintStart_toEndOf="@id/f_category_fun"
+        app:layout_constraintTop_toTopOf="@id/f_category_fun" />
 
 
     <com.google.android.material.button.MaterialButton
@@ -35,18 +35,18 @@
         android:layout_width="150dp"
         android:layout_height="100dp"
         android:layout_marginTop="20dp"
-        android:backgroundTint="@color/green"
+        android:backgroundTint="@color/category_love"
         android:text="@string/category_love"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
         app:cornerRadius="30dp"
-        app:layout_constraintStart_toStartOf="@id/f_category_fun_btn"
-        app:layout_constraintTop_toBottomOf="@id/f_category_fun_btn" />
+        app:layout_constraintStart_toStartOf="@id/f_category_fun"
+        app:layout_constraintTop_toBottomOf="@id/f_category_fun" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/f_category_food"
         android:layout_width="150dp"
         android:layout_height="100dp"
-        android:backgroundTint="@color/classic_blue"
+        android:backgroundTint="@color/category_food"
         android:text="@string/category_food"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
         app:cornerRadius="30dp"
@@ -60,6 +60,7 @@
         android:layout_width="150dp"
         android:layout_height="100dp"
         android:layout_marginTop="20dp"
+        android:backgroundTint="@color/category_taste"
         android:text="@string/category_taste"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
         app:cornerRadius="30dp"
@@ -70,6 +71,7 @@
         android:id="@+id/f_category_if"
         android:layout_width="150dp"
         android:layout_height="100dp"
+        android:backgroundTint="@color/category_if"
         android:text="@string/category_if"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
         app:cornerRadius="30dp"
@@ -83,6 +85,7 @@
         android:layout_width="150dp"
         android:layout_height="100dp"
         android:layout_marginTop="20dp"
+        android:backgroundTint="@color/category_job"
         android:text="@string/category_job"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
         app:cornerRadius="30dp"
@@ -94,6 +97,7 @@
         android:id="@+id/f_category_caution"
         android:layout_width="150dp"
         android:layout_height="100dp"
+        android:backgroundTint="@color/category_caution"
         android:text="@string/category_caution"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
         app:cornerRadius="30dp"
@@ -106,6 +110,7 @@
         android:layout_width="150dp"
         android:layout_height="100dp"
         android:layout_marginTop="20dp"
+        android:backgroundTint="@color/category_life"
         android:text="@string/category_life"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
         app:cornerRadius="30dp"

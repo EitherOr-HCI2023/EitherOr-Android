@@ -26,46 +26,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/f_ql_back_iv" />
 
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/f_ql_filter_area_cl"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/f_ql_view1">
-
-        <EditText
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            android:hint="@string/ql_quiz_count_text"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/f_ql_search_iv"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
-        <ImageView
-            android:id="@+id/f_ql_search_iv"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/ic_search"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/f_quiz_list_rv"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
         android:layout_marginHorizontal="10dp"
-        tools:listitem="@layout/item_quiz"
+        android:layout_marginBottom="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/f_ql_filter_area_cl" />
+        app:layout_constraintTop_toBottomOf="@id/f_ql_view1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/item_quiz" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

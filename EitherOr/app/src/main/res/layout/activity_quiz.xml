@@ -13,20 +13,10 @@
         android:background="@color/scuba_blue"
         android:gravity="center"
         android:text="@string/quiz_title"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
         android:textColor="@color/white"
         app:layout_constraintDimensionRatio="H, 2:1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/a_quiz_back_btn_iv"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/ic_arrow_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -42,35 +32,43 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/a_quiz_title_tv" />
 
-    <TextView
-        android:id="@+id/a_quiz_choice1_tv"
+    <Button
+        android:id="@+id/a_quiz_choice_1_btn"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="70dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/transparent"
+        android:elevation="0dp"
         android:ellipsize="end"
         android:gravity="center"
         android:maxLength="100"
-        android:text="@string/quiz_choice_dummy_text"
-        android:textSize="20sp"
+        android:stateListAnimator="@null"
+        android:text="@string/quiz_choice1_dummy_text"
+        android:textColor="@color/black"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@id/a_quiz_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@id/a_quiz_logo_tv"
         app:layout_constraintTop_toBottomOf="@id/a_quiz_logo_tv" />
 
-    <TextView
-        android:id="@+id/a_quiz_choice2_tv"
+    <Button
+        android:id="@+id/a_quiz_choice_2_btn"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginEnd="10dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/transparent"
         android:ellipsize="end"
         android:gravity="center"
         android:maxLength="100"
-        android:text="@string/quiz_choice_dummy_text"
-        android:textSize="20sp"
+        android:stateListAnimator="@null"
+        android:text="@string/quiz_choice2_dummy_text"
+        android:textColor="@color/black"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@id/a_quiz_chat_gpt_response_btn"
         app:layout_constraintEnd_toEndOf="@id/a_quiz_logo_tv"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/a_quiz_view" />
 
@@ -91,8 +89,15 @@
         android:id="@+id/a_quiz_chat_gpt_response_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
+        android:layout_margin="10dp"
         android:backgroundTint="@color/aquamarine"
+        android:padding="10dp"
         android:text="@string/quiz_chatgpt"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/a_quiz_choice_2_btn" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

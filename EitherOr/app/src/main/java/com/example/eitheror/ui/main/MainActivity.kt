@@ -33,6 +33,7 @@ class MainActivity : BaseActivity() {
     private fun initBottomNavigationView() {
         supportFragmentManager.beginTransaction()
             .replace(R.id.main_frm, HomeFragment())
+            .addToBackStack(null)
             .commitAllowingStateLoss()
 
         binding.mainBnv.setOnItemSelectedListener {
@@ -40,6 +41,7 @@ class MainActivity : BaseActivity() {
                 R.id.home -> {
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.main_frm, HomeFragment())
+                        .addToBackStack(null)
                         .commitAllowingStateLoss()
                     return@setOnItemSelectedListener true
                 }
@@ -47,6 +49,7 @@ class MainActivity : BaseActivity() {
                 R.id.like -> {
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.main_frm, LikeFragment())
+                        .addToBackStack(null)
                         .commitAllowingStateLoss()
                     return@setOnItemSelectedListener true
                 }
@@ -61,8 +64,8 @@ class MainActivity : BaseActivity() {
                 val fragment = supportFragmentManager.findFragmentById(R.id.main_frm)
                 if (fragment is HomeFragment) {
                     killApp()
-                } else {
-                    binding.mainBnv.selectedItemId = R.id.home
+                }else{
+                    supportFragmentManager.popBackStack()
                 }
             }
         }

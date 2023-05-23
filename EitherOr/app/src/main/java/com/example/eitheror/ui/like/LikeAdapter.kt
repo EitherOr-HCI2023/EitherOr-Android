@@ -24,7 +24,7 @@ class LikeAdapter(private val quizList: ArrayList<Quiz>) :
 
     inner class ViewHolder(val binding: ItemQuizBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(quiz: Quiz) {
-            binding.itemQuizTitle.text = quiz.contents
+            binding.itemQuizTitle.text = quiz.name
             binding.itemQuizHeartTv.text = quiz.hits.toString()
 
             binding.itemQuizCl.setOnClickListener {

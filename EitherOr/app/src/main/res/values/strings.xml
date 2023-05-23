@@ -32,12 +32,19 @@
     <string name="category_job">직장</string>
     <string name="category_caution">비위조심</string>
     <string name="category_life">인생</string>
-    
-    <!--    like    -->
+
+    <!--  like  -->
     <string name="like_top_text">마이픽</string>
-    
-    <string name="quiz_title">퀴즈 이름</string>
+
+    <!--  quiz  -->
+    <string name="quiz_title">Loading…</string>
     <string name="quiz_either_or">Either Or</string>
-    <string name="quiz_choice_dummy_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut molestie dapibus vestibulum. Curabitur vestibulum posuere tortor, vitae finibus orci auctor sit amet. Donec egestas sapien eu libero interdum, id molestie ipsum eleifend. Integer imperdiet pellentesque est, eu aliquet felis dapibus eu. Nullam mollis tortor eros, et laoreet dolor convallis id. Quisque in sagittis lorem. Sed venenatis orci ac consectetur aliquet.</string>
+    <string name="quiz_choice1_dummy_text">choice 1</string>
+    <string name="quiz_choice2_dummy_text">choice 2</string>
     <string name="quiz_chatgpt">chatGPT 응답 불러오기</string>
+    <string name="quiz_chatgpt_answer">Loading…</string>
+    <string name="quiz_choice1_percentage">%1$s\n %2$d 표</string>
+    <string name="quiz_choice2_percentage">%1$s\n %2$d 표</string>
+    <string name="quiz_close">닫기</string>
+
 </resources>
