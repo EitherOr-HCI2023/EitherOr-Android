@@ -2,13 +2,16 @@ package com.example.eitheror.api
 
 import android.content.Context
 import com.example.eitheror.api.response.Quiz
+import com.example.eitheror.api.response.QuizData
 import com.example.eitheror.api.response.QuizPage
 import com.google.gson.FieldNamingPolicy
 import com.google.gson.GsonBuilder
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.http.Body
 import retrofit2.http.GET
+import retrofit2.http.POST
 import retrofit2.http.PUT
 import retrofit2.http.Path
 
@@ -80,4 +83,14 @@ interface ApiService {
     suspend fun minusHit(
         @Path("articleId") articleId: Int
     ):Response<Unit>
+
+    @GET("/article/category")
+    suspend fun getCategory()
+    : Response<ArrayList<String>>
+
+    @POST("/article/add")
+    suspend fun addQuiz(
+        @Body quizData: QuizData
+    ): Response<String>
+
 }

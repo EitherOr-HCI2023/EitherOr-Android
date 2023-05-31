@@ -21,6 +21,9 @@
     <string name="item_quiz_title">퀴즈 이름</string>
     <string name="item_quiz_heart_text">%d</string>
 
+    <!--  item_like  -->
+    <string name="item_like_title">퀴즈 이름</string>
+    <string name="item_like_heart_text">%d</string>
 
     <!--  category  -->
     <string name="category_love">연인</string>
@@ -47,4 +50,15 @@
     <string name="quiz_choice2_percentage">%1$s\n %2$d 표</string>
     <string name="quiz_close">닫기</string>
 
+    <!--  addQuiz  -->
+    <string name="add_quiz_title">퀴즈 제목을 입력하세요</string>
+    <string name="add_quiz_choice1">선택지 1</string>
+    <string name="add_quiz_choice2">선택지 2</string>
+    <string name="add_quiz_confirm">확인</string>
+    <string name="add_quiz_logo">카테고리</string>
+    <string name="add_quiz_category">카테고리: </string>
+    <string name="dialog_title">비밀번호</string>
+    <string name="dialog_content">비밀번호를 입력하세요(숫자 4자리)</string>
+    <string name="dialog_cancel">취소</string>
+    <string name="dialog_confirm">확인</string>
 </resources>

@@ -6,30 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".ui.addquiz.AddQuizActivity">
 
-    <TextView
-        android:id="@+id/add_quiz_title_tv"
+    <EditText
+        android:id="@+id/add_quiz_title_et"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="@color/scuba_blue"
         android:gravity="center"
-        android:text="@string/quiz_title"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+        android:hint="@string/add_quiz_title"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
         android:textColor="@color/white"
-        app:layout_constraintDimensionRatio="H, 2:1"
+        android:textColorHint="@color/white"
+        app:layout_constraintDimensionRatio="H, 7:3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/add_quiz_back_btn_iv"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/ic_arrow_back"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
 
     <View
         android:id="@+id/add_quiz_view"
@@ -40,60 +30,84 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/add_quiz_title_tv" />
+        app:layout_constraintTop_toBottomOf="@id/add_quiz_title_et" />
 
     <TextView
-        android:id="@+id/add_quiz_choice1_tv"
+        android:id="@+id/add_quiz_category_text_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/add_quiz_category"
+        android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_quiz_logo_tv" />
+
+    <TextView
+        android:id="@+id/current_category"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:padding="10dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+        app:layout_constraintStart_toEndOf="@id/add_quiz_category_text_tv"
+
+        app:layout_constraintTop_toBottomOf="@id/add_quiz_logo_tv" />
+
+    <EditText
+        android:id="@+id/add_quiz_choice1_et"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="70dp"
         android:ellipsize="end"
         android:gravity="center"
+        android:hint="@string/add_quiz_choice1"
         android:maxLength="100"
-        android:text="@string/quiz_choice1_dummy_text"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@id/add_quiz_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@id/add_quiz_logo_tv"
-        app:layout_constraintTop_toBottomOf="@id/add_quiz_logo_tv" />
+        app:layout_constraintTop_toBottomOf="@id/current_category" />
 
-    <TextView
+    <EditText
         android:id="@+id/add_quiz_choice2_tv"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginEnd="10dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
         android:ellipsize="end"
         android:gravity="center"
+        android:hint="@string/add_quiz_choice2"
         android:maxLength="100"
-        android:text="@string/quiz_choice1_dummy_text"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@id/add_quiz_chat_gpt_response_btn"
+        app:layout_constraintBottom_toTopOf="@id/add_quiz_confirm_btn"
         app:layout_constraintEnd_toEndOf="@id/add_quiz_logo_tv"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/add_quiz_view" />
 
     <TextView
         android:id="@+id/add_quiz_logo_tv"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:background="@drawable/quiz_oval_text"
         android:gravity="center"
-        android:text="@string/quiz_either_or"
+        android:text="@string/add_quiz_logo"
         android:textColor="@color/blue"
-        app:layout_constraintBottom_toBottomOf="@id/add_quiz_title_tv"
+        app:layout_constraintBottom_toBottomOf="@id/add_quiz_title_et"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/add_quiz_title_tv" />
+        app:layout_constraintTop_toBottomOf="@id/add_quiz_title_et" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/add_quiz_chat_gpt_response_btn"
+        android:id="@+id/add_quiz_confirm_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
+        android:layout_margin="10dp"
         android:backgroundTint="@color/aquamarine"
-        android:text="@string/quiz_chatgpt"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        android:padding="10dp"
+        android:text="@string/add_quiz_confirm"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

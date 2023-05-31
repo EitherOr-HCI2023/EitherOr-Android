@@ -41,7 +41,7 @@ class QuizActivity : BaseActivity() {
 
         } else if (quizType == "SELECTED") {
             val quizId = intent.getIntExtra("id", 0)
-
+            Log.i("quizId", quizId.toString())
             lifecycleScope.launch {
                 val quizResponse = api.getQuiz(quizId)
                 if (quizResponse.isSuccessful) {

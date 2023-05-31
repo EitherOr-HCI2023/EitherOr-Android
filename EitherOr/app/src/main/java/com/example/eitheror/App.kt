@@ -1,7 +1,7 @@
 package com.example.eitheror
 
 import android.app.Application
-import com.example.eitheror.Util.PreferenceUtil
+import com.example.eitheror.util.PreferenceUtil
 import com.example.eitheror.api.ApiService
 
 class App: Application() {
